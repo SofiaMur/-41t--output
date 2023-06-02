@@ -11,7 +11,7 @@
 </script>
 
 <main>
-    <div class="container">
+    <div class="container lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         {#each articles as article}
             <div class="card">
                 <!-- <img src={article.urlToImage} /> -->
@@ -35,7 +35,7 @@
 
 <style>
     .container {
-        @apply inline-grid grid-cols-3 gap-2 p-3 border border-black;
+        @apply inline-grid gap-2 p-3 border border-black;
     }
 
     .container > .card img {
